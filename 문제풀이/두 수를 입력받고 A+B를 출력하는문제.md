@@ -67,7 +67,30 @@ print(result)
 * 첫째 줄에 테스트 케이스의 개수 T가 주어진다.
 * 각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와B가 주어진다.
 
-###python
+### java
+~~~~~~
+
+import java.util.Scanner;
+
+public class Main10953 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner s = new Scanner(System.in);
+		int t = Integer.parseInt(s.nextLine());
+		
+		for(int i =0; i<t; i++) {
+			String arr[] = s.next().split(",");
+			System.out.println(Integer.parseInt(arr[0])+Integer.parseInt(arr[1]));
+			
+		}
+		
+	}
+
+}
+~~~~~~
+### python
 ~~~~~~
 t = int(input())
 i = 0
