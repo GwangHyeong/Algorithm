@@ -1,0 +1,34 @@
+## 큐
+* 한쪽 끝에서만 자료를 넣고 다른 한쪽 끝에서만 뺄 수 있는 자료구조
+* 먼저 넣은것이 가장 먼저 나오기 때문에 first in first out (FIFO)라고도 한다.
+
+
+### 큐의 구현
+* 일차원 배열 하나로 구현할 수 있다. (큐에 포함되어 있는 내용은 [begin,end)이다)
+~~~~~~
+int queue[10000];
+int begin = 0;
+int end = 0;
+
+void push(int data) {
+  queue[end] = data;
+  end += 1;
+ }
+ int pop() {
+  queue[begin] = 0;
+  begint += 1;
+ }
+ bool empty() {
+  if (begin == end) return ture;
+  else return false;
+ }
+ int size(){
+  return end-begin;
+ }
+ ~~~~~~
+ * java의 경우 java.util.Queue 사용
+ * python 일 경우 collections.deque
+ 
+ ## 덱
+ * 양 끝에서만 자료를 넣고 양 끝에서 뺄 수 있는 자료 구조
+ 
